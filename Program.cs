@@ -9,15 +9,19 @@ namespace skia
     {
         static void Main(string[] args)
         {
-            var brokenUrl = "https://image.ibb.co/cUjP7v/verona_solid.jpg";
             var workingUrl = "https://image.ibb.co/cS8dZa/flintsolid.jpg";
+            var workingUrl2 = "https://image.ibb.co/epnoZa/working2.jpg";
+            var brokenUrl = "https://image.ibb.co/cUjP7v/verona_solid.jpg";
+            var brokenUrl2 = "https://image.ibb.co/bO1RLF/broken2.jpg";
 
             Test(workingUrl, "working");
+            Test(workingUrl2, "working2");
             Test(brokenUrl, "broken");
+            Test(brokenUrl2, "broken2");
         }
 
         private static void Test(string url, string name)
-        {            
+        {
             Console.WriteLine($"Testing '{name}'");
             Console.WriteLine($"Url - {url}");
 
